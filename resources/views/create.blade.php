@@ -2,8 +2,10 @@
 @section('title')ثبت دسته بندی @endsection
 @section('content')
 
-@include('parts.layout.topmune')
+@include('parts.topmune')
     <div class="container">
+@include('parts.massges')
+
         <div class="d-flex justify-content-center">
 <form action="{{route('store')}}" method="post">
 @csrf
@@ -17,7 +19,7 @@
 
     <div class="form-group">
         <label >شرح دسته بندی </label>
-        <textarea  class="form-group   @error('description') is-invalid @enderror" name="description " ></textarea>
+        <textarea  class="form-group   @error('description') is-invalid @enderror" name="description" ></textarea>
    @error('description')
         <div class="alert alert-danger">{{$message}}</div>
         @enderror

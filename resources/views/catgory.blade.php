@@ -4,7 +4,7 @@
 
 
 
-@include('parts.layout.topmune')
+@include('parts.topmune')
     <div class="container">
         <div class="d-flex justify-content-center">
 
