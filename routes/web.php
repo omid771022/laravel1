@@ -11,6 +11,7 @@
 |
 */
 Auth::routes();
+Route::get('/','indexControlller@index');
 Route::get('/posts','postController@index');
 Route::get('/orders','OrderConroller@orders');
 /////////////////////////////////////////////////
